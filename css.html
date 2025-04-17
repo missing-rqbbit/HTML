@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="html의 구조" />
+    <meta name="keyword" content="html, css, javascript" />
+    <meta name="author" content="제작자 또는 소유자 명" />
+    <title>기본 구조</title>
+    <style></style>
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <!-- 주석 -->
+  <body>
+    <style>
+      h2 {
+        color: blue;
+      }
+
+      .redText {
+        color: red;
+      }
+      .bg {
+        background-color: antiquewhite;
+      }
+      #loginText {
+        font-size: 30px;
+      }
+
+      /* * {
+        border: 1px solid red;
+      } */
+      .label {
+        display: inline-block;
+        width: 120px;
+        font-size: 16px;
+      }
+      legned {
+        display: none;
+      }
+      .input {
+        width: 230px;
+        height: 30px;
+        background-color: #edf0f1;
+        border: 1px solid #1b1520;
+        border-radius: 10px;
+      }
+      .row {
+        margin-bottom: 10px;
+        margin-top: 10px;
+        margin-left: 10px;
+        margin-right: 10px;
+        <!-- 마진 순서 상 우 하 좌 -->
+        margin: 10px 20px 30px 40px;
+      }
+      .form {
+        width: 480px;
+        margin: 50px auto 30px;
+      }
+      .button {
+        width: 100%;
+        background-color: #4834d4;
+        color: white;
+        border: 0;
+        font-size: 16px;
+        border-radius: 5px;
+        padding: 5px 0;
+      }
+    </style>
+    <h1>CSS - Cascading Style Sheet</h1>
+    <label for=""></label>
+    <h2 id="loginText" class="bg">Login</h2>
+
+    <form action class="form">
+      <fieldset>
+        <div class="row">
+          <label for="" class="label">아이디</label>
+          <input type="text" class="input" />
+        </div>
+        <div class="row">
+          <label for="" class="label">비밀번호</label>
+          <input type="password" class="input" />
+        </div>
+        <button type="submit" class="button">로그인</button>
+      </fieldset>
+      <!--
+      <p>사용자가 입력하는 요소는 inline 속성을 가지고 있다.</p>
+      <p>사용자가 입력하는 요소가 아닌 다른 태그는 block 속성을 가지고 있다.</p>
+      <p>div, h1~h6, p, ul, ol, li, dt, dl, dd</p>
+      <p>input, select, button, em, strong, i, b, span</p>
+      -->
+    </form>
+  </body>
+</html>
